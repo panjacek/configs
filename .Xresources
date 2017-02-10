@@ -1,0 +1,110 @@
+XTerm*locale: true
+XTerm*metaSendsEscape: true
+XTerm*selectToClipboard: false
+XTerm*cursorBlink: true
+
+XTerm*faceName: Terminus
+xterm*faceSize: 10
+xterm*saveLines: 16384
+xterm*loginShell: false
+xterm*termName: xterm-256color
+xterm*eightBitInput: false
+XTerm*foreground     : #ffffff
+XTerm*background     : #000000
+XTerm*color7         : #FFFFFF
+XTerm*color15         : #FFFFFF
+XTerm*color6         : #55FFFF
+XTerm*color14         : #55FFFF
+XTerm*cursorColor    : #55ff55
+
+UXTerm*locale: true
+UXTerm*metaSendsEscape: true
+UXTerm*selectToClipboard: false
+UXTerm*cursorBlink: true
+
+UXTerm*faceName: Terminus
+UXterm*faceSize: 10
+UXterm*saveLines: 32000
+UXterm*loginShell: false
+UXterm*termName: xterm-256color
+UXterm*eightBitInput: false
+UXTerm*foreground     : #ffffff
+UXTerm*background     : #000000
+UXTerm*color7         : #FFFFFF
+UXTerm*color15         : #FFFFFF
+UXTerm*color6         : #55FFFF
+UXTerm*color14         : #55FFFF
+UXTerm*cursorColor    : #55ff55
+
+
+!-- Xft settings -- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+
+urxvt.saveLines: 32535
+URxvt.allow_bold: true
+URxvt.termName: rxvt-256color
+!URxvt.reverseVideo:     True
+*font:   -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-iso8859-*
+*boldFont:  -xos4-terminus-bold-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:bold:pixelsize:12
+URxvt*italicFont:  xft:Bitstream Vera Sans Mono:italic:autohint=true:pixelsize=12
+URxvt*boldItalicFont:  xft:Bitstream Vera Sans Mono:bold:italic:autohint=true:pixelsize=12
+!*font: -xos4-terminus-medium-r-normal-*-23-*-*-*-*-*-iso8859-*
+
+! Fix font space
+! URxvt*letterSpace: -1
+
+boldMode:          true
+urxvt.cursorBlink:       true
+URxvt*scrollBar: false
+! scrollbar color
+urxvt*scrollColor:        #1E1E1E
+! scrollbar trough area color
+urxvt*troughColor:        #333333
+! scrollbar without a trough
+urxvt*scrollBar_floating: false
+! scrollbar to the right
+urxvt*scrollBar_right:    true
+! scrollbar style
+urxvt*scrollstyle:        plain
+URxvt*thickness: 5
+
+urxvt*foreground: white
+urxvt*background: black
+
+*transparent: true
+*shading: 20
+
+urxvt.cursorColor:       #55ff55
+
+! Other colors
+
+! Black + DarkGrey
+*color0             :   #000000
+*color8             :   #555555
+! DarkRed + Red
+*color1             :   #aa0000
+*color9             :   #ff5555
+! DarkGreen + Green
+*color2             :   #00aa00
+*color10            :   #55ff55
+! DarkYellow + Yellow
+*color3             :   #aa5500
+*color11            :   #ffff55
+! DarkBlue + Blue
+*color4             :   #0000aa
+*color12            :   #5555ff
+! DarkMagenta + Magenta
+*color5             :   #aa00aa
+*color13            :   #ff55ff
+!DarkCyan + Cyan (both not tango)
+*color6             :   #00aaaa
+*color14            :   #55ffff
+! LightGrey + White
+*color7             :   #BBBBBB
+*color15            :   #EEEEEE
+URxvt.imLocale: pl_PL.UTF-8
