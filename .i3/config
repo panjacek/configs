@@ -37,7 +37,7 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 #exec --no-startup-id urxvtd -f -q -o
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -69,6 +69,14 @@ bindsym $mod+Shift+minus move container to workspace "SUBLIME"
 bindsym $mod+Ctrl+plus workspace "WEB"
 workspace "WEB" output VGA-1
 assign [class="Firefox"] "WEB"
+
+# VOLUME
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+
+# brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # change focus
 bindsym $mod+j focus left
