@@ -59,7 +59,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " open NERDTree
 nmap <silent> <C-D> :NERDTreeToggle<CR>
-" nmap <F6> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$']
 " autocmd vimenter * NERDTree
 
 " visual autocomplete form cmd menu
@@ -83,10 +83,14 @@ set foldnestmax=5
 highlight Folded ctermbg=8 
 
 " Space to open current fold 
-nnoremap <space> zA
+nnoremap <space> za
 vnoremap <space> zf
 
 " statusline
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 " Always show statusline
 set laststatus=2
+
+" UI draw fix.
+set lazyredraw      
+
