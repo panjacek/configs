@@ -38,3 +38,10 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# other #
+#########
+.gitignore
+.coverage
+.pylintrc
+.pytest_cache

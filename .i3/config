@@ -69,6 +69,7 @@ bindsym $mod+Shift+minus move container to workspace "SUBLIME"
 bindsym $mod+Ctrl+plus workspace "WEB"
 workspace "WEB" output VGA-1
 assign [class="Firefox"] "WEB"
+assign [class="Vivaldi"] "WEB"
 
 # VOLUME
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
