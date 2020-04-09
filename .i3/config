@@ -61,12 +61,7 @@ workspace "PKT" output VGA-1
 assign [class="^Wireshark$"] "PKT"
 
 
-bindsym $mod+minus workspace "SUBLIME"
-workspace "SUBLIME" output VGA-1
-assign [class="Sublime"] "SUBLIME"
-bindsym $mod+Shift+minus move container to workspace "SUBLIME"
-
-bindsym $mod+Ctrl+plus workspace "WEB"
+bindsym $mod+minus workspace "WEB"
 workspace "WEB" output VGA-1
 assign [class="Firefox"] "WEB"
 assign [class="Vivaldi"] "WEB"
@@ -152,6 +147,8 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+minus move container to workspace "WEB"
+bindsym $mod+Shift+plus move container to workspace "PKT"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -160,8 +157,15 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# LOCK
+bindsym $mod+Ctrl+l exec i3lock-fancy -p
+
 # exit i3 without mouse:
 bindsym $mod+Ctrl+Shift+e exit
+
+# screenshot
+bindsym Print exec xfce4-screenshooter
+bindsym Mod1+Print exec xfce4-screenshooter
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -193,8 +197,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     position top
+    #i3status
     status_command i3status |  ~/.config/i3status/mem.py
-   # ~/.config/i3status/mem.py
 
     colors{
            background #232323
@@ -203,4 +207,4 @@ bar {
 }
 exec --no-startup-id xrandr --output VGA-1 --right-of VGA-0
 exec --no-startup-id xrandr --output VGA-1 --right-of VGA-2
-exec --no-startup-id feh --randomize --bg-max --scale-down  ~/Pictures/tapety/*
+exec --no-startup-id feh --randomize --bg-max --scale-down  ~/Pictures/*

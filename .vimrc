@@ -15,6 +15,11 @@ set pastetoggle=<F2>
 " show a visual line under the cursor's current line
 " set cursorline
 
+" autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 expandtab
+" autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
+" autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
+
 " PYTHON ------------------
 " Items for Python supertab
 let g:SuperTabDefaultCompletionTypeDiscovery = [
@@ -44,6 +49,27 @@ highlight link Flake8_Warning    WarningMsg
 highlight link Flake8_Complexity WarningMsg
 highlight link Flake8_Naming     WarningMsg
 highlight link Flake8_PyFlake    WarningMsg
+
+" Markdown
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+" set syntax=markdown
+
+" Syntax helper
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+" JAVA JAVA
+" autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+
+" YML
+autocmd FileType {yaml,yml} setlocal ts=2 sts=2 sw=2 expandtab
 
 " Make it DARK...
 set background=dark
@@ -93,4 +119,5 @@ set laststatus=2
 
 " UI draw fix.
 set lazyredraw      
-
+set cmdheight=1
+hi Normal guibg=NONE ctermbg=NONE

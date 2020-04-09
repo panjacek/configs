@@ -76,8 +76,8 @@ URxvt*thickness: 5
 urxvt*foreground: white
 urxvt*background: black
 
-*transparent: true
-*shading: 20
+urxvt*transparent: true
+urxvt*shading: 20
 
 urxvt.cursorColor:       #55ff55
 URxvt.perl-ext-common: selection-to-clipboard
